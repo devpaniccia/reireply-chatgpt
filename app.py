@@ -46,7 +46,7 @@ def configure_rei_reply_webhook():
         "Content-Type": "application/json",
     }
     payload = {
-        "url": "tu_url_de_webhook",
+        "url": "https://reireply-chatgpt.herokuapp.com",
         "event": "incoming_message"
     }
     response = requests.post(url, headers=headers, data=json.dumps(payload))
